@@ -48,4 +48,5 @@
 
 select c.name 
 from customer as c 
-where c.id <> 2;
+where c.referee_id is null
+    or c.referee_id <> 2;
